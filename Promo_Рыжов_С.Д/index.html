@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Finlite — финансы под контролем</title>
+    <link rel="stylesheet" href="css_js/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas для падающих частиц -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <div class="container">
+        <!-- Hero секция -->
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1><span class="finlite-highlight">FINLITE</span> — ФИНАНСЫ, КОТОРЫЕ ВСЕГДА ПОД КОНТРОЛЕМ</h1>
+                <p>Finlite — удобное место, чтобы управлять личным бюджетом и отслеживать все ваши счета. Создайте четкую финансовую картину для планирования, накоплений и анализа.</p>
+            </div>
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img src="img/image.png" alt="Finlite app preview" onerror="this.src='https://placehold.co/600x800/1a2a1a/B3EF42?text=Finlite'">
+            </div>
+        </div>
+
+        <!-- Кнопки загрузки по центру -->
+        <div class="hero-download-group">
+            <button class="btn btn-primary btn-hero" data-os="Windows">Загрузить для Windows</button>
+            <button class="btn btn-outline btn-hero" data-os="MacOS">Загрузить для MacOS</button>
+        </div>
+
+        <!-- Миссия и Ценности с 3D эффектом -->
+        <div class="mission-values-wrapper">
+            <div class="mission-card card-3d slide-from-left">
+                <h3>МИССИЯ</h3>
+                <p>Наша миссия – дать вам полный контроль над финансами. Мы превращаем управление бюджетом <span class="highlight-green">из рутины в инструмент</span> для уверенной и свободной жизни.</p>
+            </div>
+            <div class="finlite-big fade-up">o finlite</div>
+            <div class="value-card card-3d slide-from-right">
+                <h3>ЦЕННОСТИ</h3>
+                <p>Мы создаём интуитивный инструмент, который превращает цифры в <span class="highlight-green">осознанные решения</span>. Ваш финансовый успех – наш главный итог.</p>
+            </div>
+        </div>
+
+        <!-- Блок 1: Единая картина финансов -->
+        <div class="section-header fade-up">
+            <h2>Единая картина финансов</h2>
+            <p>Все ваши счета и карты в едином безопасном пространстве</p>
+        </div>
+
+        <div class="full-width-block">
+            <div class="block-with-side-text">
+                <div class="main-content slide-from-left">
+                    <div class="image-card">
+                        <div class="image-3d">
+                            <img src="img/Frame 1539.png" alt="Общий баланс" class="block-image-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-text slide-from-right">
+                    <div class="side-text-card card-3d">
+                        <p>Показывает <span class="highlight-green">единый итог</span> по всем вашим счетам, картам и накоплениям для мгновенной оценки состояния.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 2: Ваши счета -->
+        <div class="full-width-block">
+            <div class="block-with-side-text reverse">
+                <div class="side-text slide-from-left">
+                    <div class="side-text-card card-3d">
+                        <p>Отображает все ваши <span class="highlight-green">счета в одном месте</span>: управляйте видимостью и добавляйте новые в два клика.</p>
+                    </div>
+                </div>
+                <div class="main-content slide-from-right">
+                    <div class="image-card">
+                        <div class="image-3d">
+                            <img src="img/Frame 1585.png" alt="Ваши счета" class="block-image-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 3: Умный анализ трат -->
+        <div class="section-header fade-up">
+            <h2>Умный анализ трат</h2>
+            <p>Автоматическая категоризация и понятные отчеты</p>
+        </div>
+
+        <div class="full-width-block">
+            <div class="block-with-side-text">
+                <div class="main-content slide-from-left">
+                    <div class="image-card">
+                        <div class="image-3d">
+                            <img src="img/Frame 1631.png" alt="Статистика за 6 месяцев" class="block-image-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-text slide-from-right">
+                    <div class="side-text-card card-3d">
+                        <p>Анализируйте ваши финансы в любом разрезе: статистика показывает <span class="highlight-green">динамику доходов и расходов</span> за день, неделю, месяц или год.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 4: Планирование без стресса -->
+        <div class="section-header fade-up">
+            <h2>Планирование без стресса</h2>
+            <p>Легко ставьте цели и отслеживайте прогресс</p>
+        </div>
+
+        <div class="full-width-block">
+            <div class="block-with-side-text reverse">
+                <div class="side-text slide-from-left">
+                    <div class="side-text-card card-3d">
+                        <p>Отслеживает <span class="highlight-green">ваш прогресс</span>: показывает, сколько уже накоплено и сколько осталось до нужной суммы.</p>
+                    </div>
+                </div>
+                <div class="main-content slide-from-right">
+                    <div class="images-vertical">
+                        <div class="image-3d">
+                            <img src="img/Frame 1571.png" alt="Цель: Новый пк" class="goal-image-card">
+                        </div>
+                        <div class="image-3d">
+                            <img src="img/Frame 1544.png" alt="Цель: Подарок" class="goal-image-card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div class="contacts-green fade-up">
+            <h2>Контакты</h2>
+            <div class="social-links-green">
+                <div class="social-item-green" data-social="Telegram">Telegram</div>
+                <div class="social-item-green" data-social="WhatsApp">Whats App</div>
+                <div class="social-item-green" data-social="VK">Вконтакте</div>
+            </div>
+            <div class="email-green">почта: your-finlite@gmail.com</div>
+        </div>
+
+        <!-- Установить сейчас -->
+        <div class="install-block-transparent fade-up">
+            <div class="install-card-transparent">
+                <h2>УСТАНОВИТЬ СЕЙЧАС</h2>
+                <div class="download-group-center">
+                    <button class="btn btn-primary btn-large" data-os="Windows">Загрузить для Windows</button>
+                    <button class="btn btn-primary android-btn btn-large" data-os="Android">Загрузить для Android</button>
+                </div>
+                <p class="other-devices">Finlite для других устройств</p>
+                <div class="badge-group-center">
+                    <span class="badge-os">Windows</span>
+                    <span class="badge-os">Android</span>
+                    <span class="badge-os">MacOS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            finlite © 2026 — Финансовая свобода начинается здесь
+        </div>
+    </div>
+
+    <script src="css_js/script.js"></script>
+</body>
+</html>
